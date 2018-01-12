@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import AdminView from './AdminView'
+import ShopView from './ShopView'
 
 class HomePage extends Component {
 
@@ -29,7 +30,7 @@ class HomePage extends Component {
     }
 
     handleItemCurrentlyOnSaleChange = (event) => {
-        const itemCurrentlyOnSale = event.target.value;
+        const itemCurrentlyOnSale = event.target.value
         this.setState({itemCurrentlyOnSale})
     }
 
@@ -74,6 +75,8 @@ class HomePage extends Component {
                     <AdminView
                         productList={this.state.productList}
                         addNewProductToProductList={this.addNewProductToProductList}/>
+
+                    {/* <ShopView /> */}
 
                 </div>
             </div>

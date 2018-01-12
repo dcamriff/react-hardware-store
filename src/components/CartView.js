@@ -3,9 +3,9 @@ import React from 'react'
 import ProductList from './ProductList'
 
 const CartView = (props) => {
-    return (
-        <div className="large-view-box"></div>
-    )
+    const productList = props.productList
 
+    const totalPrice = productList.reduce((totalPrice, product) => {
 
+    }
 }
