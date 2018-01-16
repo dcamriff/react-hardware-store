@@ -10,10 +10,12 @@ const ProductList = (props) => {
     const productComponents = productList.map((product, index) => {
         return <Product
             viewMode={props.viewMode}
-            product={product}
+            product={product.product}
+            description={product.description}
+            price={product.price}
             key={index}
             id={product.id}
-            deleteProductFromListById={props.deleteProductFromListById}
+            deleteProductFromProductList={props.deleteProductFromProductList}
             addProductToCart={props.addProductToCart}
             removeProductFromCart={props.removeProductFromCart}/>
     })
